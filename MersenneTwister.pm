@@ -2,7 +2,7 @@
 # Author:   George Schlossnagle <george@omniti.com>
 #           Theo Schlossnagle <jesus@omniti.com> 
 # Created:  03 October 2002
-# Version:  1.0.0
+# Version:  1.0.1
 #
 # Copyright (c) OmniTI Computer Consulting, Inc. All rights reserved.
 #   This program is free software; you can redistribute it and/or
@@ -21,7 +21,7 @@ use Carp;
 use strict;
 use vars qw($VERSION @ISA @EXPORT @EXPORT_OK %EXPORT_TAGS $AUTOLOAD);
 
-$VERSION = "1.0.0" ;
+$VERSION = "1.0.1" ;
 
 @ISA = qw(Exporter DynaLoader);
 

@@ -2,7 +2,7 @@
  * Author:   George Schlossnagle <george@omniti.com>
  *           Theo Schlossnagle <jesus@omniti.com>
  * Created:  3rd October 2002
- * Version:  1.0.0
+ * Version:  1.0.1
  *
  * Copyright (c) 2002 OmniTI Computer Consulting, Inc. All rights reserved.
  *   This program is free software; you can redistribute it and/or
@@ -190,14 +190,14 @@ MT_mt_seed(gen, seed)
         OUTPUT:
 
 SV *
-MT_mt_rand(gen, max=&sv_undef)
+MT_mt_rand(gen, max=&PL_sv_undef)
         GENERATOR gen
 	SV * max
 	PREINIT:
 	omniti_uint32 v;
 	double d;
         CODE:
-	  if(max != &sv_undef) {
+	  if(max != &PL_sv_undef) {
 	    d = SvNV(max);
 	  } else {
 	    d = 1.0;
